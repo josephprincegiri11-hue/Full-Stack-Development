@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2980b9;
+      padding: 15px 30px;
+    }
+    .navbar a {
+      color: #d1d1d1;
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: background 0.3s;
+    }
+    .navbar a:hover {
+      background: #2892d4;
+      border-radius: 4px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    /* PROFILE SECTION */
+    .profile-section {
+      max-width: 1500px;
+      margin: 2px auto;
+    }
+    .profile-card {
+      height: 700px;
+      box-shadow: 0 8px 0px rgba(0,0,0,0.15);
+      border: none;
+            background-color:honeydew;
+
+    }
+    .profile-img {
+      width: 100%;
+      max-width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #2980b9;
+      margin: 20px auto;
+      display: block;
+    }
+    .profile-text h1 {
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    .profile-text p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      max-width: 1450px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .about h2 {
+      margin-bottom: 20px;
+      color: #2980b9;
+    }
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    .black-footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cta-button {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+   <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-brand" style="color: #f2f2f2; font-weight: 800;font-size: 25px;">Portfolio</div>
+    <div class="nav-links" style="font-size: 20px;">
+      <a href="index.html">Home</a>
+      <a href="FSD.html">Full Stack Development</a>
+      <a href="HTML.html">HTML</a>
+      <a href="CSS.html">CSS</a>
+      <a href="Bootstrap.html">Bootstrap</a>
+      <a href="JavaScript.html">JavaScript</a>
+    </div>
+  </div>
+
+  <!-- PROFILE SECTION -->
+  <div class="profile-section">
+    <div class="card profile-card w-100">
+  <div class="row g-0 h-100 align-items-center">
+        <!-- LEFT SIDE (Image) -->
+        <div class="col-md-5 d-flex justify-content-center">
+          <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+        </div>
+
+        <!-- RIGHT SIDE (Text) -->
+        <div class="col-md-7 d-flex align-items-center">
+          <div class="card-body profile-text">
+            <h1>Joseph Prince Giri</h1>
+            <p>Web Developer | Designer | Tech Enthusiast</p>
+            <p class="mt-3">
+              Welcome to my portfolio website. I build responsive, modern, and user-friendly web applications 
+              using the latest technologies. Let’s create something amazing together!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT ME SECTION -->
+  <div class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I am a passionate Full Stack Developer with expertise in building modern, responsive, and user-friendly web applications.
+       My skill set spans both frontend and backend development—from crafting clean and engaging interfaces with HTML, CSS, JavaScript, 
+       and frameworks like Bootstrap and React, to developing robust and scalable back-end systems using Node.js, Express, and databases
+        such as MySQL and MongoDB. I enjoy solving real-world problems through technology, learning new tools, and continuously improving
+         my craft. Beyond coding, I love exploring new tech trends, collaborating on projects, and sharing knowledge with others. My ultimate
+          goal is to create solutions that not only function seamlessly but also deliver outstanding user experiences.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="section black-footer" id="footer">
+    <h2>Ready to Become a Developer?</h2>
+    <p>Start your journey today. Learn the skills to build complete web applications from scratch.</p>
+    <a href="#" class="cta-button">Get Started</a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

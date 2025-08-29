@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #298bb9;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #f39c12;
+    }
+
+    .navbar-brand {
+      font-size: 1.2em;
+      font-weight: 800;
+      color: #f2f2f2;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+
+      .navbar a {
+        margin: 5px 0;
+      }
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .white-section {
+      background-color: white;
+    }
+
+    .blue-section {
+      background-color: #2ea6f7;
+      color: rgb(255, 255, 255);
+    }
+
+    .orange-section {
+      background-color: #fce8c8;
+      color: rgb(10, 0, 0);
+    }
+
+    .black-footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .content-block {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 0 20px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 10px 0 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 300px;
+      max-width: 350px;
+      text-align: left;
+    }
+
+    .blue-section .card,
+    .orange-section .card {
+      background: #ffffff;
+      color: #333;
+    }
+
+    .cta-button {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    code {
+      background: #f2f2f2;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    table {
+      width: 100%;
+      margin-top: 30px;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2980b9;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #e0f7fa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-brand" style="color: #f2f2f2; font-weight: 800;font-size: 25px;">Portfolio</div>
+    <div class="nav-links" style="font-size: 20px;">
+      <a href="index.html">Home</a>
+      <a href="FSD.html">Full Stack Development</a>
+      <a href="HTML.html">HTML</a>
+      <a href="CSS.html">CSS</a>
+      <a href="Bootstrap.html">Bootstrap</a>
+      <a href="JavaScript.html">JavaScript</a>
+    </div>
+  </div>
+
+  <!-- Intro Section -->
+  <div class="section blue-section">
+    <h1>Cascading Style Sheets</h1>
+    <p> CSS (Cascading Style Sheets) is a language for styling and marking up HTML web pages.  While HTML provides a web page's structure, CSS manages how that structure is
+       visually disposed (fonts, colors, spacing and placement). Having CSS separate content from design makes web development more orderly and efficient.  CSS can apply styles
+        to an individual element, groups of elements, or entire pages.
+
+    </p>
+  </div>
+
+  <!-- Types of CSS Section -->
+  <div class="section orange-section">
+    <div class="content-block">
+      <h2>Types of CSS:</h2>
+      <p>Inline CSS – Written directly inside an HTML element using the style attribute.</p>
+      <img src="IMG/image.png" alt=""><br><br>
+      <img src="IMG/image2.png" alt="">
+    </div>
+  </div>
+
+  <!-- Internal CSS Section -->
+  <div class="section blue-section">
+    <div class="content-block">
+      <h2>Internal CSS</h2>
+      <p>Defined within a style tag inside the head section of HTML.</p>
+      <img src="IMG/image3.png" alt="">
+      <br><br>
+      <img src="IMG/image4.png" alt="">
+    </div>
+  </div>
+
+  <!-- External CSS Section -->
+  <div class="section orange-section">
+    <div class="content-block">
+      <h2>External CSS</h2>
+      <p>Written in a separate .css file and linked using link.</p>
+      <img src="IMG/image5.png" alt="">
+      <br>
+      <img src="IMG/image6.png" alt=""><br>
+      <img src="IMG/image7.png" alt="">
+    </div>
+  </div>
+
+  <!-- CSS Properties Table Section -->
+  <div class="section white-section">
+    <div class="content-block">
+      <h2>Common CSS Properties</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>CSS Property</th>
+            <th>Example Value</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>color</td><td>red, #333, rgb(0,0,0)</td><td>Sets the text color</td></tr>
+          <tr><td>background-color</td><td>blue, #f0f0f0</td><td>Sets the background color</td></tr>
+          <tr><td>font-size</td><td>16px, 1.5em, larger</td><td>Sets the size of the font</td></tr>
+          <tr><td>font-family</td><td>Arial, sans-serif</td><td>Defines the typeface</td></tr>
+          <tr><td>font-weight</td><td>normal, bold, 600</td><td>Sets the thickness of the text</td></tr>
+          <tr><td>text-align</td><td>left, center, right</td><td>Aligns text horizontally</td></tr>
+          <tr><td>text-decoration</td><td>none, underline, line-through</td><td>Adds decoration to text</td></tr>
+          <tr><td>line-height</td><td>1.5, 20px</td><td>Sets the space between lines</td></tr>
+          <tr><td>margin</td><td>10px, 0 auto, 1em 2em</td><td>Sets space outside the element</td></tr>
+          <tr><td>padding</td><td>5px, 1em 0, 10px 15px</td><td>Sets space inside the element</td></tr>
+          <tr><td>border</td><td>1px solid black, none</td><td>Sets the border of an element</td></tr>
+          <tr><td>width</td><td>100px, 50%, auto</td><td>Sets the width of the element</td></tr>
+          <tr><td>height</td><td>200px, auto, 50vh</td><td>Sets the height of the element</td></tr>
+          <tr><td>display</td><td>block, inline, flex, none</td><td>Controls layout behavior</td></tr>
+          <tr><td>position</td><td>static, relative, absolute, fixed</td><td>Defines positioning method</td></tr>
+          <tr><td>top, right, bottom, left</td><td>10px, 0, auto</td><td>Offsets for positioned elements</td></tr>
+          <tr><td>z-index</td><td>1, 999, -1</td><td>Controls stack order</td></tr>
+          <tr><td>overflow</td><td>visible, hidden, scroll</td><td>Controls content overflow</td></tr>
+          <tr><td>cursor</td><td>pointer, default, move</td><td>Defines mouse cursor</td></tr>
+          <tr><td>opacity</td><td>1, 0.5, 0</td><td>Sets transparency level</td></tr>
+        </tbody>
+      </table>
+    </div>
+     <!-- Example Section -->
+  <div class="section orange-section" id="example">
+    <div class="content-block">
+      <h2>Example Of CSS </h2>
+      <h3></p><b>Code:</b></h3>
+      <img src="../Eportfolio/CSS/css_code1.png" alt=""><br>
+      <img src="../Eportfolio/CSS/css_code2.png" alt=""><br>
+      <img src="../Eportfolio/CSS/css_code3.png" alt=""><br>
+      <img src="../Eportfolio/CSS/css_code4.png" alt=""><br>
+
+      <p>Output:</p><br>
+      <img src="../Eportfolio/CSS/css_op1.png" alt=""><br>
+      <img src="../Eportfolio/CSS/css_op2.png" alt=""><br>
+      <img src="../Eportfolio/CSS/css_op3.png" alt=""><br>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="section black-footer">
+    <h2>Ready to Become a CSS Developer?</h2>
+    <p>Start your journey today. Learn the skills to build complete web applications from scratch.</p>
+    <a href="#" class="cta-button">Get Started</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #298bb9;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #f39c12;
+    }
+
+    .navbar-brand {
+      font-size: 1.2em;
+      font-weight: 800;
+      color: #f2f2f2;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+
+      .navbar a {
+        margin: 5px 0;
+      }
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .white-section {
+      background-color: rgb(250, 250, 250);
+    }
+
+    .blue-section {
+      background-color: #44aef5;
+      color: rgb(255, 255, 255);
+    }
+
+    .orange-section {
+      background-color: #ffeed1;
+      color: rgb(15, 8, 8);
+    }
+
+    .black-footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .content-block {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 0 20px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 10px 0 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 300px;
+      max-width: 350px;
+      text-align: left;
+    }
+
+    .blue-section .card,
+    .orange-section .card {
+      background: #ffffff;
+      color: #333;
+    }
+
+    .cta-button {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 30px;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2980b9;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #e0f7fa;
+    }
+  </style>
+</head>
+<body>
+<!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-brand" style="color: #f2f2f2; font-weight: 800;font-size: 25px;">Portfolio</div>
+    <div class="nav-links" style="font-size: 20px;">
+       <a href="index.html">Home</a>
+      <a href="FSD.html">Full Stack Development</a>
+      <a href="HTML.html">HTML</a>
+      <a href="CSS.html">CSS</a>
+      <a href="Bootstrap.html">Bootstrap</a>
+      <a href="JavaScript.html">JavaScript</a>
+    </div>
+  </div>
+
+  <!-- Intro Section -->
+  <div class="section blue-section">
+    <h1>Bootstrap</h1>
+    <p> Bootstrap is a popular open-source front-end framework for building mobile-first and responsive websites.  Bootstrap, developed by Twitter, 
+        is a collection of HTML, CSS, and JavaScript components, that can help developers build websites faster and more effectively.
+        With Bootstrap, developers can properly align content across all device sizes (desktop, tablet, and mobile) using the grid system with 12 columns. 
+        The elements that come built-in (e.g., buttons, forms, navigation bars, modals, cards, etc.) are all styled responsively and consistently.
+        To use Bootstrap in an HTML document, you need to include the CSS and JavaScript files for Bootstrap, which can be either downloaded onto your server
+        or from a CDN.  When you add Bootstrap to your document, you'll be ready to apply styles to your HTML tags and layout, all using Bootstrap classes.
+    </p>
+  </div>
+
+  <!-- Bootstrap Classes Table Section -->
+  <div class="section white-section">
+    <div class="content-block">
+      <h2>Common Bootstrap Classes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Bootstrap Class / Element</th>
+            <th>Purpose / Description</th>
+            <th>Syntax Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.container</td>
+            <td>Wraps and centers content with padding</td>
+            <td>&lt;div class="container"&gt;Content&lt;/div&gt;</td>
+          </tr>
+          <tr>
+            <td>.row, .col-*</td>
+            <td>Grid layout system (rows and columns)</td>
+            <td>&lt;div class="row"&gt;&lt;div class="col-6"&gt;Half&lt;/div&gt;&lt;/div&gt;</td>
+          </tr>
+          <tr>
+            <td>.btn, .btn-primary</td>
+            <td>Styled buttons</td>
+            <td>&lt;button class="btn btn-primary"&gt;Click&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td>.form-control</td>
+            <td>Styled form inputs</td>
+            <td>&lt;input class="form-control" type="text"&gt;</td>
+          </tr>
+          <tr>
+            <td>.navbar, .navbar-brand</td>
+            <td>Navigation bar structure</td>
+            <td>&lt;nav class="navbar"&gt;&lt;a class="navbar-brand"&gt;Brand&lt;/a&gt;&lt;/nav&gt;</td>
+          </tr>
+          <tr>
+            <td>.card, .card-body</td>
+            <td>Card layout for content blocks</td>
+            <td>&lt;div class="card"&gt;&lt;div class="card-body"&gt;Text&lt;/div&gt;&lt;/div&gt;</td>
+          </tr>
+          <tr>
+            <td>.text-center</td>
+            <td>Centers text horizontally</td>
+            <td>&lt;p class="text-center"&gt;Centered Text&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>.img-fluid</td>
+            <td>Makes images responsive</td>
+            <td>&lt;img src="image.jpg" class="img-fluid"&gt;</td>
+          </tr>
+          <tr>
+            <td>.alert, .alert-success</td>
+            <td>Display alert messages</td>
+            <td>&lt;div class="alert alert-success"&gt;Success!&lt;/div&gt;</td>
+          </tr>
+          <tr>
+            <td>.table, .table-striped</td>
+            <td>Styled tables with optional striped rows</td>
+            <td>&lt;table class="table table-striped"&gt;...&lt;/table&gt;</td>
+          </tr>
+          <tr>
+            <td>.badge, .bg-danger</td>
+            <td>Small badge indicators</td>
+            <td>&lt;span class="badge bg-danger"&gt;New&lt;/span&gt;</td>
+          </tr>
+          <tr>
+            <td>.text-danger, .text-success</td>
+            <td>Text color utilities</td>
+            <td>&lt;p class="text-danger"&gt;Error&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>.d-flex, .justify-content-center</td>
+            <td>Flex layout utilities</td>
+            <td>&lt;div class="d-flex justify-content-center"&gt;Centered&lt;/div&gt;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+        <!-- Example Section -->
+  <div class="section orange-section" id="example">
+    <div class="content-block">
+      <h2>Example Of CSS </h2>
+      <h3></p><b>Code:</b></h3>
+      <img src="../Eportfolio/BS/bs_code1.png" alt=""><br>
+      <img src="../Eportfolio/BS/bs_code2.png" alt=""><br>
+
+      <p>Output:</p><br>
+      <img src="../Eportfolio/BS/bs_op1.png" alt=""><br>
+      <img src="../Eportfolio/BS/bs_op2.png" alt=""><br>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="section black-footer">
+    <h2>Ready to Become a Bootstrap Developer?</h2>
+    <p>Start your journey today. Learn the skills to build complete web applications from scratch.</p>
+    <a href="#" class="cta-button">Get Started</a>
+  </div>
+
+</body>
+</html>

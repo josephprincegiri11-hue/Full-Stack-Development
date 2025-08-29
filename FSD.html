@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Stack Development</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #298bb9;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #f39c12;
+    }
+
+    .navbar-brand {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #f2f2f2;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .white-section {
+      background-color: white;
+    }
+
+    .blue-section {
+      background-color: #44aef5;
+      color: white;
+    }
+
+    .orange-section {
+      background-color: #fff6e7;
+      color: rgb(0, 0, 0);
+    }
+
+    .black-footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .content-block {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 0 20px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 10px 0 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 300px;
+      max-width: 350px;
+      text-align: left;
+    }
+
+    .blue-section .card,
+    .orange-section .card {
+      background: #ffffff;
+      color: #333;
+    }
+
+    .cta-button {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    code {
+      background: #f2f2f2;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar a {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-brand" style="color: #f2f2f2; font-weight: 800;font-size: 25px;">Portfolio</div>
+    <div class="nav-links" style="font-size: 20px;">
+      <a href="index.html">Home</a>
+      <a href="FSD.html">Full Stack Development</a>
+      <a href="HTML.html">HTML</a>
+      <a href="CSS.html">CSS</a>
+      <a href="Bootstrap.html">Bootstrap</a>
+      <a href="JavaScript.html">JavaScript</a>
+    </div>
+  </div>
+
+  <!-- Intro Section -->
+  <div class="section blue-section">
+    <h1>Full Stack Development</h1>
+    <p>Explore both the front-end and back-end technologies that power the web. Become a complete developer.</p>
+  </div>
+
+  <!-- What is Full Stack -->
+  <div class="section orange-section">
+    <div class="content-block">
+      <h2>What is Full Stack Development?</h2>
+      <p>Full stack development refers to the process of developing the client-facing front end and server-based back end of a web application. A full stack developer can work on 
+        any part of the development process, from helping to do work with databases and server logic, to the visual design of a web page. Because it allows an individual programmer,
+         or a small group of programmers, to propel the whole product forward, it is a valuable role in modern web development. The impact of user-experience is one of many 
+         considerations in the world of web applications. Difficulty level and assumptions influence a user's cognitive load and user-app interaction expectations. Every interactive
+          interface is driven by a complicated architecture of code that drives business logic, database interfacing, data analytics, and calculations. The role of the full stack
+           developer lies in the space that bridges the operations of the application underneath what the user can see. The following technologies are frequently used in full stack
+            development: Node.js, Python (Django), PHP, HTML, CSS, JavaScript (for the front end), and MongoDB and MySQL (for the database). The popularity of JavaScript-based stacks
+             such as MERN (MongoDB, Express, React, Node) has made the entire stack more efficient and accessible.</p>
+    </div>
+  </div>
+
+  <!-- Frontend Section -->
+  <div class="section blue-section">
+    <div class="content-block">
+      <h2>Front End Development</h2>
+      <p>Front-end development is whatever a user sees or interacts with on an application or website via an internet browser. Front-end development consists of three foundational 
+        pillars - HTML, CSS, and JavaScript. As front-end technologies such as Vue.js, React or Bootstrap increase and enhance the entire process. The primary goal of front-end
+         development is to provide a seamless, responsive, and beautiful experience for users. Developers focus on creating layouts, handling user input and clicks, and styling content.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>HTML</h3>
+          <p>The standard language for generating and organizing online material is HTML. It uses tags like <&lth>, <&ltp>, <&ltimg> to arrange text, images, links, and other
+             elements. HTML is the fundamental structure of every web site. It just manages what can be seen on the site; it has no control over how things seem or act. A browser 
+             could not determine what to show without HTML. The elements of HTML can be styled and graphically presented with CSS. It regulates a webpage's design, colors, fonts, 
+             spacing, and general look. CSS helps programmers maintain the organization and cleanliness of their code by separating style from contents. Styles can be used from a 
+             distant file, within the page, or directly. CSS improves a website's aesthetic appeal and cross-device usability.</p>
+        </div>
+        <div class="card">
+          <h3>CSS</h3>
+          <p>With CSS, you can style and graphically present an HTML element. CSS controls everything about the design of your web pages: the design itself, colors, fonts, spacing, 
+            and overall appearance. CSS allows developers to keep their code organized and cleaner by separating design from content. You can use styles from an external file, from
+             within the page, or inline. CSS relates to your website's visual charm and capability to work across a range of devices.</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>CSS can be used to complement styling or graphic formatting to the HTML elements. It regulates the presentation of a webpage. The styling features include the design of 
+            elements like boxes, colors, fonts, spacing, and the overall look of the design. By utilizing CSS, developers can essentially separate the design aspect away from the content
+             aspect; this aids in keeping the code well formatted. External or separate files or the page or inline styles can be used. CSS not only makes a website look visually more
+              appealing but improves the usability across devices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backend Section -->
+  <div class="section orange-section">
+    <div class="content-block">
+      <h2>Backend Development</h2>
+      <p>Back-end development is when web program component users don't see. The back end is responsible for server actions, database connections, authorization, and logic that
+         is performed for every request. With the back end, user input is performed and reacts when a user clicks an option or submits a form. The back end is a connector between 
+         the front-end, server, and database. Without the back end, dynamic websites could not do anything beyond static pages.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Node.js</h3>
+          <p>Node.js is a JavaScript runtime that allows developers to build server-side application code with JavaScript. Node.js has an event driven, non-blocking structure,
+             making it ideal for building fast and scalable applications. Node.js is commonly used for microservices, real-time applications, and APIs. Node's V8 engine
+              (like Google Chrome) ensures great performance. A primary benefit of Node is that it provides developers the ability to use a single language (JavaScript) 
+              for the entire stack.</p>
+        </div>
+        <div class="card">
+          <h3>Python (Django/Flask)</h3>
+          <p>It is an established back-end programming language because of its simplicity and easy readability. Django is an efficient technology that allows developers to create
+             safe, scalable applications quickly. On the other hand, Flask offers more control over the building process and is more lightweight. Both allow for design, 
+             user’s authorization, and access to databases. Python, because of its active community and ease of use, is great for both beginner and experienced back-end developers.</p>
+        </div>
+        <div class="card">
+          <h3>PHP</h3>
+          <p>PHP is a favored scripting language, purpose-built for web development. PHP is available on almost all web servers and provides the backbone for many popular content
+             management systems (CMS) including WordPress. PHP enables the creation of dynamic pages and makes connecting to databases, such as MySQL, effortless. Frameworks like 
+             Laravel bring about modern features like routing, templating, and security. PHP is still dependable and relied on in many web implementations, even considering more 
+             recent options.</p>
+        </div>
+        <div class="card">
+          <h3>Java (Spring Boot)</h3>
+          <p>It is a powerful object-oriented programming language that is utilized in enterprise and large-scale applications. With its integrated tools and auto-configuration,
+             Spring Boot is a Java-based platform that makes back-end development easier. It supports microservices, security, RESTful APIs, and more. Java apps are renowned for 
+             their scalability, stability, and security. Business-critical systems, healthcare, and finance all make extensive use of Spring Boot.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Database Section -->
+  <div class="section white-section">
+    <div class="content-block">
+      <h2>Databases</h2>
+      <p>A well-structured method of managing, storing, and retrieving data for applications is known as a database. Databases are a core component of full stack development as they persist 
+        user, content, and transactional data among other potential data. Databases work in tandem with back-end code to respond to queries and provide data and results to the front-end. 
+        Databases establish the organization, persistence, and availability of data to users. There are two principal types of databases: relational (SQL) and non-relational (NoSQL).</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>MySQL</h3>
+          <p>One of the most commonly produced Relational database management system (RDBMS) is MySQL. It uses SQL (Structured Query Language) for interacting with the data that it
+             organizes in structured tables with rows and columns. MySQL is open-source, reliable, and used on often on sites like Facebook and WordPress. It works very well for
+              applications with complex queries and must maintain data consistency. It easily integrates with back-end languages such as, Python, Node.js, PHP, etc.</p>
+        </div>
+        <div class="card">
+          <h3>Oracle</h3>
+          <p>Oracle is an enterprise level relational database system with exceptional efficiency that is used by large organizations. It has very good tools for managing transactions, 
+            securing data, and improving efficiency. Oracle supports Distributed Database systems, PL/SQL (its procedural language) and many advanced features of SQL. It is most suitable
+             for mission-critical systems in government, communications, and banking. Scale and reliability is what Oracle is best known for, despite being complex and commercial.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Footer -->
+  <div class="section black-footer">
+    <h2>Ready to Become a Full Stack Developer?</h2>
+    <p>Start your journey today. Learn the skills to build complete web applications from scratch.</p>
+    <a href="#" class="cta-button">Get Started</a>
+  </div>
+
+</body>
+</html>
